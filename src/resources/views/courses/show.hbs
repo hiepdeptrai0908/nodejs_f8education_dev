@@ -1,0 +1,15 @@
+<div class="mt-4">
+    <div class="row">
+        <div class="col-lg-3 col-item">
+            <div>このコースは登録しました</div>
+            <button class="btn btn-info col-3-btn">すぐ勉強します</button>
+            <div>レベル：{{course.level}}</div>
+        </div>
+
+        <div class="col-lg-9">
+            <h2>{{ course.name }}</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ course.videoId }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>{{ course.description }}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+h1 {
+  color: red; }
+
+.col-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e3dede; }
+
+.col-3-btn {
+  margin: 10px; }
+
+.navbar-collapse {
+  justify-content: flex-end; }

@@ -1,0 +1,26 @@
+<div class="mt-4">
+    <h3>コースを編集する</h3>
+    <form class="mt-4" method="post" action="/courses/{{ courses._id }}?_method=PUT">
+        <div class="mb-3 mt-4">
+            <label for="name-input" class="form-label">Name</label>
+            <input type="text" value="{{ courses.name }}" name="name" class="form-control" id="name-input" placeholder="Enter name...">
+        </div>
+
+        <div class="mb-3 mt-4">
+            <label for="description-input" class="form-label">Description</label>
+            <textarea name="description" class="form-control" id="description-input" placeholder="Enter description...">{{ courses.description }}</textarea>
+        </div>
+
+        <div class="mb-3 mt-4">
+            <label for="video-id-input" class="form-label">Video ID</label>
+            <input type="text" value="{{ courses.videoId }}" name="videoId" class="form-control" id="video-id-input" placeholder="Enter video id...">
+        </div>
+
+        <div class="mb-3 mt-4">
+            <label for="level-input" class="form-label">レベル</label>
+            <input type="text" value="{{ courses.level }}" name="level" class="form-control" id="level-input" placeholder="Enter level...">
+        </div>
+
+        <button type="submit" class="btn btn-primary">保存</button>
+    </form>
+</div>

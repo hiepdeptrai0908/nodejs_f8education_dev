@@ -1,0 +1,22 @@
+@import 'variables';
+
+h1{
+    color: $red-color;
+}
+
+.col-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(227, 222, 222)
+
+}
+
+.col-3-btn{
+    margin: 10px;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
